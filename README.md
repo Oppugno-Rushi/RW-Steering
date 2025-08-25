@@ -10,14 +10,33 @@ We use **LMFlow** for training and evaluation: <https://github.com/OptimalScale/
 
 ---
 
-## Figures
+## Repository at a Glance
 
-### Figure 1: Poisoned Context Testbed
+```text
+RW-Steering/
+├── figures/
+│   ├── Figure1.png
+│   └── Figure3.png
+├── raw_data/
+├── datasets/
+│   ├── alignment_finetuning/
+│   ├── enhancing_awareness/
+│   ├── generalizable/
+│   └── mixtures_0_to_10/
+├── evaluation_prompt/
+│   ├── cleanliness_evaluation/
+│   └── consistency_evaluation/
+├── examples/
+└── README.md
+
+##Figures
+
+### Poisoned Context Testbed
 ![Figure 1](Figure/Figure1.png)  
 *This figure illustrates the **Poisoned Context Testbed** we constructed to study how LLMs prioritize and process mixed context. The testbed contains pairs of user queries and real-world contexts combining relevant information with inappropriate content. We find that even a small amount of inappropriate context can mislead LLMs to generate undesirable responses.*
 
-### Figure 3: Our Approaches for Steering LLM Behavior
-![Figure 3](Figure/Figure3.png)  
+### Our Approaches for Steering LLM Behavior
+![Figure 2](Figure/Figure2.png)  
 *This figure compares baseline steering approaches (left) with our **RW-Steering** method (right). RW-Steering restructures prompts to jointly optimize the judgment of inappropriate context and the generation of human-preferred answers, internalizing safer behavior. Training is further supplemented with examples containing a small number of inappropriate segments to handle cases where the model’s judgment may fail.*
 
 
@@ -52,7 +71,7 @@ Data for **generalizable approaches** based on RW-Steering, where targets **firs
 
 ### 5. `datasets/mixtures_0_to_10/`
 
-Evaluation splits where the proportion of inappropriate information is systematically varied from **0% to 10%**, enabling controlled stress tests and behavior-curve analyses.
+Evaluation splits where the proportion of inappropriate information is systematically varied from **0% to 100%**, enabling controlled stress tests and behavior-curve analyses.
 
 ### 6. `evaluation_prompt/`
 
