@@ -51,7 +51,7 @@ Auxiliary datasets that teach models to **judge context appropriateness** (e.g.,
 
 Data for **generalizable approaches** based on RW-Steering, where targets **first elicit an appropriateness judgment and then the final answer**, improving robustness across contamination levels.
 
-### 5. `datasets/mixtures_0_to_10/`
+### 5. `datasets/mixtures/`
 
 Evaluation splits where the proportion of inappropriate information is systematically varied from **0% to 100%**, enabling controlled stress tests and behavior-curve analyses.
 
