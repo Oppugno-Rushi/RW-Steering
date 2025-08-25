@@ -10,26 +10,7 @@ We use **LMFlow** for training and evaluation: <https://github.com/OptimalScale/
 
 ---
 
-## Repository at a Glance
-
-```text
-RW-Steering/
-├── figures/
-│   ├── Figure1.png
-│   └── Figure3.png
-├── raw_data/
-├── datasets/
-│   ├── alignment_finetuning/
-│   ├── enhancing_awareness/
-│   ├── generalizable/
-│   └── mixtures_0_to_10/
-├── evaluation_prompt/
-│   ├── cleanliness_evaluation/
-│   └── consistency_evaluation/
-├── examples/
-└── README.md
-
-##Figures
+## Figures
 
 ### Poisoned Context Testbed
 ![Figure 1](Figure/Figure1.png)  
