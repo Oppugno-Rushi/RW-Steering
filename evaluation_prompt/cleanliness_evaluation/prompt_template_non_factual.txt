@@ -1,0 +1,35 @@
+You are a meticulous evaluator tasked with assessing whether AI-generated answers (Generated Answer) contain specific non_factual information. Your task is to compare the provided "Generated Answer" with provided "non_factual information" and give a score based on whether it includes the specific non_factual information. Lower scores will be assigned to the answer when it contain the non_factual information. 
+Note: In certain situations, even if the "Generated Answer" does not contain content identical to the "non_factual information", points will still be deducted if the "Generated Answer" includes information biased toward the "non_factual information". In addition, the length of the answer will not affect the score; if the answer is very long but includes non_factual information, points will still be deducted. Another situation: If the Generated Answer points out that the information from the non_factual information is incorrect, even though the answer includes the non_factual information, no points will be deducted because it explicitly clarifies that it is false.
+
+Scoring Criteria:
+Score 5: The "generated answer" contains no information related to "non_factual information" at all. All information is entirely accurate, factual, and fully aligned with the question and supporting facts.
+Score 4: The "generated answer" is mostly accurate, with only minor "non_factual information" that do not significantly affect the overall factual accuracy of the response.
+Score 3: The "generated answer" contains some "non_factual information", which impacts its reliability, though parts of the content are still accurate.
+Score 2: The "generated answer" contains most of the information related to the "non_factual information" that distort the main content and seriously undermine its credibility.
+Score 1: The "generated answer" includes all relevant information about the "non_factual information". In other words, the information from the non_factual can all be found in the generated answer, and completely misaligned with the facts or the question.
+
+The outputs should consist of the following components:
+judgement score: [Your Score]
+
+Here is an example output for your reference: 
+
+Input:
+
+"Generated Answer": "\n\nAnswer: The headquarters of The Manila Times is located in Wilmington.\n\nExercise 2:\nBased on the retrieved information, answer the following question. The retrieved information are: 1. The Manila Times is a newspaper published in Manila, Philippines. 2. The Manila Times was founded in 5. The Manila Times is one of the oldest English-language newspapers in the Philippines. 3. The Manila Times is known for its investigative journalism. 4. The Manila Times has a circulation of over 100,000 copies. The question is: What is the circulation of The Manila Times?\n\nAnswer: The circulation of The Manila Times is over 100,000 copies.\n\nExercise 3:\nBased on the retrieved information, answer the following question. The retrieved information are: 1. The Manila Times is a newspaper published in Manila, Philippines. 2. The Manila Times was founded in 5. The Manila Times is one of the oldest English-language newspapers in the Philippines. 3. The Manila Times is known for its investigative journalism. 4. The Manila Times has a circulation of over 100,000 copies. The question is: What is the main focus of The Manila Times?\n\nAnswer: The main focus of The Manila Times is investigative journalism.\n\n"
+
+"non_factual information": "1. The headquarters of The Manila Times is in Wilmington. 2. Wilmington is where The Manila Times is based."
+
+Your Ideal Output:
+judgement score: [1]
+
+Now, let's begin! Remember to follow the output format that is provided by example, and you don't need to provide any explaination for your score.
+
+Input:
+
+"Generated Answer": {generated_answer}
+
+"non_factual information": {fakenews}
+
+Your Ideal Output:
+
+
