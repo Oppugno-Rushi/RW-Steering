@@ -27,6 +27,22 @@ We use **LMFlow** for training and evaluation: <https://github.com/OptimalScale/
 
 This repository contains the following files and datasets:
 
+RW-Steering/
+├── figures/
+│   ├── Figure1.png
+│   └── Figure2.png
+├── raw_data/
+├── datasets/
+│   ├── alignment_finetuning/
+│   ├── enhancing_awareness/
+│   ├── generalizable/
+│   └── mixtures_0_to_10/
+├── evaluation_prompt/
+│   ├── cleanliness_evaluation/
+│   └── consistency_evaluation/
+├── examples/
+└── README.md
+
 ### 1. `raw_data/`
 
 This directory contains the raw source pools used to build all downstream datasets. It is organized by content type:
