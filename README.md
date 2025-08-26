@@ -1,8 +1,8 @@
-# EMNLP 2025 Main Paper: RW-Steering: Rescorla-Wagner Steering of LLMs under Disproportionate Inappropriate Context
+# EMNLP 2025 Main Paper: Rescorla-Wagner Steering of LLMs for Undesired Behaviors over Disproportionate Inappropriate Context
 
 ## Overview
 
-Welcome to the repository for *RW-Steering: Rescorla-Wagner Steering of LLMs under Disproportionate Inappropriate Context*. This work studies **LLM robustness** when helpful context is mixed with inappropriate content (fake news, hate speech, non-factual, privacy). 
+Welcome to the repository for *RW-Steering: Rescorla-Wagner Steering of LLMs for Undesired Behaviors over Disproportionate Inappropriate Context*. This work studies **LLM robustness** when helpful context is mixed with inappropriate content (fake news, hate speech, non-factual, privacy). 
 
 Our approach builds on the **Rescorla–Wagner (RW) model**, a classic theory of associative learning where updates happen through **prediction error**—surprising cues gain more weight while familiar ones gain less. By analogy, we steer LLMs to down-weight inappropriate signals and strengthen reliance on trustworthy context. This repository provides raw data, derived datasets, and evaluation prompts; see our paper for full methodology and findings.
 
